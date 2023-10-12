@@ -60,5 +60,21 @@ Após isto, a Web API estará em pleno funcionamento. É possível visualizar a 
  
 <img width="630" alt="Captura de tela 2023-10-12 164058" src="https://github.com/ChristianSilvaPaz/ChristiaSilvaPaz-WeatherApi/assets/62564760/7d7f53f1-2f53-40d2-b059-467839662a3a">
 
+## 4. Utilizando a Api
+Para receber dados climáticos de uma cidade, faça uma requisição GET para /api/WeatherCity/ conforme imagem abaixo:
+<img width="603" alt="Captura de tela 2023-10-12 173533" src="https://github.com/ChristianSilvaPaz/ChristiaSilvaPaz-WeatherApi/assets/62564760/a58766f7-9455-4185-b523-f86d98585e24">
+
+# :hammer_and_wrench: Construído com:
+Ferramentas/tecnologias utilizadas para construção deste projeto
+
+  <ul>
+    <li> <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/7.0">.NET 7 - Backend e Web API</li>
+    <li> <a href="https://learn.microsoft.com/pt-br/ef/core/">Entity Framework Core - Mapeamento objeto-relacionalI </li>
+    <li> <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads">SQL Server - Banco de dados relacional</li>
+    <li> <a href="https://learn.microsoft.com/pt-br/ef/ef6/modeling/code-first/fluent/types-and-properties"> Fluent API - Configuração e o mapeamento no EF</li>
+    <li> <a href="https://visualstudio.microsoft.com/pt-br/vs/"> Visual Studio 2022 - IDE C# / .NET</li>
+    <li> <a href="https://swagger.io/"> Swagger - Documentação e teste da API</li>
+  </ul>
+
 
 
