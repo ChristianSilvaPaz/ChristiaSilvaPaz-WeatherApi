@@ -34,7 +34,22 @@ Acesse a pasta do código fonte do projeto com:
 ```
 cd ChristianSilvaPaz-WeatherApi
 ```
-  
+Restaure as dependências:
+```
+donet restore
+```
+Compile utilizando:
+```
+donet build
+```
+Rode os testes de unidade (caso queira):
+```
+dotnet test
+```
+Em seguida rode o servidor:
+```
+dotnet run --project .\WeatherApi\
+```
 Após isto, a Web API estará em pleno funcionamento. É possível visualizar a documentação e testar API, essa tela deverá aparecer na aba do seu navegador:
  
 <img width="630" alt="Captura de tela 2023-10-12 164058" src="https://github.com/ChristianSilvaPaz/ChristiaSilvaPaz-WeatherApi/assets/62564760/7d7f53f1-2f53-40d2-b059-467839662a3a">
