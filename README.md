@@ -10,7 +10,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 <ul>
   <li> <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/7.0"> .NET 7 ou superior </li>
-  <li> <a href="https://www.mysql.com/downloads/"> MySQL 8 ou superior </li>
+  <li> <a href="https://dev.mysql.com/downloads/installer/"> MySQL 8 ou superior </li>
 </ul>
 
 ## 1. Obtendo uma cópia e configurando
@@ -71,18 +71,16 @@ Ferramentas/tecnologias utilizadas para construção deste projeto
 
   <ul>
     <li> <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/7.0">.NET 7 - Backend e Web API</li>
-    <li> <a href="https://learn.microsoft.com/pt-br/ef/core/">Entity Framework Core - Mapeamento objeto-relacionalI </li>
-    <li> <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads">SQL Server - Banco de dados relacional</li>
-    <li> <a href="https://learn.microsoft.com/pt-br/ef/ef6/modeling/code-first/fluent/types-and-properties"> Fluent API - Configuração e o mapeamento no EF</li>
+    <li> <a href="https://github.com/DapperLib/Dapper">Dapper Micro ORM </li>
+    <li> <a href="https://dev.mysql.com/downloads/installer/">MySql - Banco de dados relacional</li>
     <li> <a href="https://visualstudio.microsoft.com/pt-br/vs/"> Visual Studio 2022 - IDE C# / .NET</li>
+    <li> <a href="https://automapper.org/"></a>AutoMaper - Mapeador Objeto-Objeto</li>
+    <li> <a href="https://xunit.net/"></a>XUnit - Ferramenta de Teste</li>
+    <li> <a href="https://fluentassertions.com/"></a>Fluent Assertions - Asserts</li>
+    <li> <a href="https://nsubstitute.github.io/"></a>NSubstitute - Mocking Test</li>
     <li> <a href="https://swagger.io/"> Swagger - Documentação e teste da API</li>
   </ul>
 
-# :books: Arquitetura
-Arquitetura limpa refere-se à **organização do projeto** de forma que ele seja fácil de **entender**, fácil de **testar**, fácil de **manter** e fácil de **mudar** conforme o projeto cresce.
-**A Regra de Dependência** afirma que a dependência do código-fonte só pode apontar para o **interior do aplicativo**.
-Dessa forma o **domínio** é independente e não faz referência a recursos externos.
-![image](https://github.com/ChristianSilvaPaz/ChristianSilvaPaz-MecEnxovaisApi/assets/62564760/41abc3a3-adc4-4d01-9e4c-9d1d7a618569)
 
 
 
