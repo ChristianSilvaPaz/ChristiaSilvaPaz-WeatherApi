@@ -26,7 +26,13 @@ Altere a seção ConnectionStrings com as informações de conexão com o MySqlW
 "DefaultConnection": "Server=localhost;Database=weather_database;Uid=root;Pwd=;AllowZeroDateTime=true"
 }
 
-## 2. Subindo o Backend
+## 2. Preparando o banco de dados
+O projeto está configurado para usar um banco de dados MySql. Verifique se a cadeia de conexão DefaultConnection em appsettings.json aponta para uma instância válida do MySql.
+Abaixo está o código para criação da tabela que o projeto utiliza:
+
+<img width="230" alt="Captura de tela 2023-10-11 162012" src="https://github.com/ChristianSilvaPaz/ChristiaSilvaPaz-WeatherApi/assets/62564760/7e3fd2db-fb50-4b6c-b16c-adfe7d0a9ac3">
+
+## 3. Subindo o Backend
 Observação: os passos abaixo foram realizados utilizando um ambiente de desenvolvimento integrado como o Microsoft Visual Studio, basta abrir a solução WeatherApi.sln que está na pasta src e executar o projeto WeatherApi.API
 Abra a aba Gerenciador de Testes do Visual Studio para executar os testes, ou se preferir, no terminal: 
 
