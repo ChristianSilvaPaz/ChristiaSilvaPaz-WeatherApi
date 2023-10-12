@@ -7,12 +7,10 @@ public class TimerHostedService : IHostedService
     private const int CacheTime = 20;
 
     private readonly IServiceProvider _serviceProvider;
-    private readonly ILogger<TimerHostedService> _logger;
 
-    public TimerHostedService(IServiceProvider serviceProvider, ILogger<TimerHostedService> logger)
+    public TimerHostedService(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;
-        _logger = logger;
     }
 
     public Task StartAsync(CancellationToken cancellationToken)
