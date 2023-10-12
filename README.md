@@ -31,5 +31,5 @@ Observação: os passos abaixo foram realizados utilizando um ambiente de desenv
   
 Após isto, a Web API estará em pleno funcionamento. É possível visualizar a documentação e testar API, essa tela deverá aparecer na aba do seu navegador:
  
-![image](https://github.com/ChristianSilvaPaz/ChristianSilvaPaz-Assets/blob/main/Captura%20de%20tela%202023-10-12%20164058.png)
+![image](Captura de tela 2023-10-12 164058.png)
 
