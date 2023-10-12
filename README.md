@@ -76,5 +76,11 @@ Ferramentas/tecnologias utilizadas para construção deste projeto
     <li> <a href="https://swagger.io/"> Swagger - Documentação e teste da API</li>
   </ul>
 
+# :books: Arquitetura
+Arquitetura limpa refere-se à **organização do projeto** de forma que ele seja fácil de **entender**, fácil de **testar**, fácil de **manter** e fácil de **mudar** conforme o projeto cresce.
+**A Regra de Dependência** afirma que a dependência do código-fonte só pode apontar para o **interior do aplicativo**.
+Dessa forma o **domínio** é independente e não faz referência a recursos externos.
+![image](https://github.com/ChristianSilvaPaz/ChristianSilvaPaz-MecEnxovaisApi/assets/62564760/41abc3a3-adc4-4d01-9e4c-9d1d7a618569)
+
 
 
