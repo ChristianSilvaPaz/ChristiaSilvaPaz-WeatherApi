@@ -29,7 +29,7 @@ Altere a seção ConnectionStrings com as informações de conexão com o MySqlW
 ## 2. Subindo o Backend
 Observação: os passos abaixo foram realizados utilizando um ambiente de desenvolvimento integrado como o Microsoft Visual Studio, basta abrir a solução WeatherApi.sln que está na pasta src e executar o projeto WeatherApi.API
   
-Após isto, a Web API estará em pleno funcionamento. É possível visualizar a documentação e testar API, essa tela deverá aparecer na aba do seu navegador:
+<sup>Após isto, a Web API estará em pleno funcionamento. É possível visualizar a documentação e testar API, essa tela deverá aparecer na aba do seu navegador:</sup>
  
 ![image](Captura de tela 2023-10-12 164058.png)
 
