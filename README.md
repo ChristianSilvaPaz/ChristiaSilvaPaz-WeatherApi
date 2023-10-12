@@ -19,15 +19,17 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 ## 1. Obtendo uma cópia e configurando
 Abra um terminal e clone este repositório em qualquer diretório da sua máquina (recomendado c:\ no Windows) utilizando o comando: git clone https://github.com/ChristianSilvaPaz/ChristianSilvaPaz-WeatherApi.git
 
-Acesse o diretório do projeto em: WeatherApi/WeatherApi.API
+Acesse o diretório do projeto em: WeatherApi/WeatherApi
 
 Localize e abra o arquivo de configuração: appsettings.Development.json
 
 Altere a seção ConnectionStrings com as informações de conexão com o MySqlWorkbench:
 
+```
 "ConnectionStrings": {
 "DefaultConnection": "Server=localhost;Database=weather_database;Uid=root;Pwd=;AllowZeroDateTime=true"
 }
+```
 
 ## 2. Preparando o banco de dados
 O projeto está configurado para usar um banco de dados MySql. Verifique se a cadeia de conexão DefaultConnection em appsettings.json aponta para uma instância válida do MySql.
@@ -77,11 +79,11 @@ Ferramentas/tecnologias utilizadas para construção deste projeto
     <li> <a href="https://github.com/DapperLib/Dapper">Dapper Micro ORM </li>
     <li> <a href="https://dev.mysql.com/downloads/installer/">MySql - Banco de dados relacional</li>
     <li> <a href="https://visualstudio.microsoft.com/pt-br/vs/"> Visual Studio 2022 - IDE C# / .NET</li>
-    <li> <a href="https://automapper.org/"></a>AutoMaper - Mapeador Objeto-Objeto</li>
-    <li> <a href="https://xunit.net/"></a>XUnit - Ferramenta de Teste</li>
-    <li> <a href="https://fluentassertions.com/"></a>Fluent Assertions - Asserts</li>
-    <li> <a href="https://nsubstitute.github.io/"></a>NSubstitute - Mocking Test</li>
-    <li> <a href="https://swagger.io/"> Swagger - Documentação e teste da API</li>
+    <li> <a href="https://automapper.org/">AutoMaper - Mapeador Objeto-Objeto</li>
+    <li> <a href="https://xunit.net/">XUnit - Ferramenta de Teste</li>
+    <li> <a href="https://fluentassertions.com/">Fluent Assertions - Asserts</li>
+    <li> <a href="https://nsubstitute.github.io/">NSubstitute - Mocking Test</li>
+    <li> <a href="https://swagger.io/">Swagger - Documentação e teste da API</li>
   </ul>
 
 # :books: Arquitetura
