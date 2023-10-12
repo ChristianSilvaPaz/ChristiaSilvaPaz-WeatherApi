@@ -1,6 +1,7 @@
 # WeatherApi
 
-Este projeto trata-se de uma API como parte do teste técnico do processo seletivo para a vaga de .NET Developer JR na Fasters.
+Este projeto trata-se do desenvolvimento de uma API como parte do processo seletivo para a vaga de .NET Developer JR na Fasters.
+<b>O objetivo é demonstrar conhecimento e por isso foi cometido o excesso de engenharia de forma proposital.</b>
 
 # :rocket: Começando
 
@@ -80,6 +81,9 @@ Ferramentas/tecnologias utilizadas para construção deste projeto
     <li> <a href="https://nsubstitute.github.io/"></a>NSubstitute - Mocking Test</li>
     <li> <a href="https://swagger.io/"> Swagger - Documentação e teste da API</li>
   </ul>
+
+# :books: Arquitetura
+O estilo de arquitetura Vertical Slice trata da organização do código por recursos e fatias verticais, em vez de organização por questões técnicas. Trata-se de agrupar o código de acordo com a funcionalidade do negócio e reunir todos os códigos relevantes. A arquitetura Vertical Slice pode ser um ponto de partida e pode evoluir posteriormente, quando um aplicativo se tornar mais sofisticado.
 
 
 
