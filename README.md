@@ -30,14 +30,15 @@ Altere a seção ConnectionStrings com as informações de conexão com o MySqlW
 Observação: os passos abaixo foram realizados utilizando um ambiente de desenvolvimento integrado como o Microsoft Visual Studio, basta abrir a solução WeatherApi.sln que está na pasta src e executar o projeto WeatherApi.API
 Abra a aba Gerenciador de Testes do Visual Studio para executar os testes, ou se preferir, no terminal: acesse a pasta do código fonte do projeto com:
 
-<details>
-  Acesse a pasta do código fonte do projeto com:
-  cd ChristianSilvaPaz/WeatherApi
-</details>
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
   
 Após isto, a Web API estará em pleno funcionamento. É possível visualizar a documentação e testar API, essa tela deverá aparecer na aba do seu navegador:
  
-![image]<img width="630" alt="Captura de tela 2023-10-12 164058" src="https://github.com/ChristianSilvaPaz/ChristiaSilvaPaz-WeatherApi/assets/62564760/7d7f53f1-2f53-40d2-b059-467839662a3a">
+<img width="630" alt="Captura de tela 2023-10-12 164058" src="https://github.com/ChristianSilvaPaz/ChristiaSilvaPaz-WeatherApi/assets/62564760/7d7f53f1-2f53-40d2-b059-467839662a3a">
 
 
 
