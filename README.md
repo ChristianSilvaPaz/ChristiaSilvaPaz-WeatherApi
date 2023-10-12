@@ -1,6 +1,7 @@
 # WeatherApi
 
 Este projeto trata-se do desenvolvimento de uma API como parte do processo seletivo para a vaga de .NET Developer JR na Fasters.
+
 <b>O objetivo é demonstrar conhecimento e por isso foi cometido o excesso de engenharia de forma proposital.</b>
 
 # :rocket: Começando
