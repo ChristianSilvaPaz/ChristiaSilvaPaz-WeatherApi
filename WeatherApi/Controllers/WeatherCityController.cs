@@ -15,7 +15,7 @@ namespace WeatherApi.Controllers
             _weatherServices = weatherServices;
         }
 
-        [HttpGet("{name}")]
+        [HttpGet("GetByName/{name}")]
         public async Task<ActionResult<WeatherCityResponseDTO>> GetByNameAsync(string name)
         {
             if (string.IsNullOrEmpty(name)) 

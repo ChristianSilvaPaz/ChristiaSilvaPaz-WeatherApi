@@ -7,10 +7,12 @@ public class TimerHostedService : IHostedService
     private const int CacheTime = 20;
 
     private readonly IServiceProvider _serviceProvider;
+    private readonly ILogger<TimerHostedService> _logger; 
 
-    public TimerHostedService(IServiceProvider serviceProvider)
+    public TimerHostedService(IServiceProvider serviceProvider, ILogger<TimerHostedService> logger)
     {
         _serviceProvider = serviceProvider;
+        _logger = logger;
     }
 
     public Task StartAsync(CancellationToken cancellationToken)
@@ -25,10 +27,12 @@ public class TimerHostedService : IHostedService
 
         using (IServiceScope scope = _serviceProvider.CreateScope())
         {
+            _logger.LogInformation($"{DateTime.Now}");
+
             IWeatherRepository weatherRepository =
                 scope.ServiceProvider.GetRequiredService<IWeatherRepository>();
 
-            await weatherRepository.DeleteByCacheDate(finishCacheDate);
+            await weatherRepository.DeleteByCacheDateAsync(finishCacheDate);
         }
     }
 

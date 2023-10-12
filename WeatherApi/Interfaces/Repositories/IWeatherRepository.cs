@@ -7,6 +7,6 @@ public interface IWeatherRepository
 {
     Task<WeatherCity?> GetByNameAsync(string name, DateTime startCreationDate);
     Task<WeatherCity> CreateAsync(WeatherCity weatherCity);
-    Task DeleteByCacheDate(DateTime cacheDate);
+    Task DeleteByCacheDateAsync(DateTime cacheDate);
 }
 

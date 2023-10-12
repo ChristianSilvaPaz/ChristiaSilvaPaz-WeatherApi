@@ -76,7 +76,7 @@ public class WeatherRepository : IWeatherRepository
         }
     }
 
-    public async Task DeleteByCacheDate(DateTime cacheDate)
+    public async Task DeleteByCacheDateAsync(DateTime cacheDate)
     {
         using (var connection = new MySqlConnection(_connectionString))
         {
