@@ -61,8 +61,10 @@ Após isto, a Web API estará em pleno funcionamento. É possível visualizar a 
 <img width="630" alt="Captura de tela 2023-10-12 164058" src="https://github.com/ChristianSilvaPaz/ChristiaSilvaPaz-WeatherApi/assets/62564760/7d7f53f1-2f53-40d2-b059-467839662a3a">
 
 ## 4. Utilizando a Api
-Para receber dados climáticos de uma cidade, faça uma requisição GET para /api/WeatherCity/ conforme imagem abaixo:
-<img width="603" alt="Captura de tela 2023-10-12 173533" src="https://github.com/ChristianSilvaPaz/ChristiaSilvaPaz-WeatherApi/assets/62564760/a58766f7-9455-4185-b523-f86d98585e24">
+Para receber dados climáticos de uma cidade, faça uma requisição GET para /api/WeatherCity/GetByName conforme imagem abaixo:
+
+<img width="604" alt="Captura de tela 2023-10-12 174124" src="https://github.com/ChristianSilvaPaz/ChristiaSilvaPaz-WeatherApi/assets/62564760/65bfbcf0-ba63-4adc-93f5-50472cc82a6b">
+
 
 # :hammer_and_wrench: Construído com:
 Ferramentas/tecnologias utilizadas para construção deste projeto
