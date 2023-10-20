@@ -2,42 +2,40 @@
 
 namespace WeatherApi.HostedService;
 
-public class TimerHostedService : IHostedService
+public class TimerHostedService : BackgroundService
 {
     private const int CacheTime = 20;
-
     private readonly IServiceProvider _serviceProvider;
-    private readonly ILogger<TimerHostedService> _logger; 
 
-    public TimerHostedService(IServiceProvider serviceProvider, ILogger<TimerHostedService> logger)
+    public TimerHostedService(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;
-        _logger = logger;
     }
 
-    public Task StartAsync(CancellationToken cancellationToken)
+    protected override async Task ExecuteAsync(CancellationToken cancellationToken)
     {
-        new Timer(ExecuteProcess, null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
-        return Task.CompletedTask;
+        await ExecuteProcess(cancellationToken);
     }
 
-    private async void ExecuteProcess(object? state)
+    private async Task ExecuteProcess(CancellationToken cancellationToken)
     {
         var finishCacheDate = DateTime.Now.AddMinutes(-CacheTime);
 
         using (IServiceScope scope = _serviceProvider.CreateScope())
         {
-            _logger.LogInformation($"{DateTime.Now}");
-
             IWeatherRepository weatherRepository =
                 scope.ServiceProvider.GetRequiredService<IWeatherRepository>();
 
-            await weatherRepository.DeleteByCacheDateAsync(finishCacheDate);
+            while (!cancellationToken.IsCancellationRequested)
+            {
+                await weatherRepository.DeleteByCacheDateAsync(finishCacheDate);
+                await Task.Delay(5000, cancellationToken);
+            }
         }
     }
 
-    public Task StopAsync(CancellationToken cancellationToken)
+    public override async Task StopAsync(CancellationToken cancellationToken)
     {
-        return Task.CompletedTask;
+        await base.StopAsync(cancellationToken);
     }
 }
